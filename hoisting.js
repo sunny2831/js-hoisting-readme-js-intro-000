@@ -8,17 +8,20 @@ function callMe() {
 }
 
 function crazy(){
+  var thisIsCrazy = function (){
     console.log("hey!!!")
+  }
+  thisIsCrazy();
 }
 
 function sayMyName() {
-  console.log("Kristin")
   var name = "Cricky";
 
   sayMy();
 
   function sayMy() {
-    console.log(name);
     var name = "Kristin";
+
+    console.log(name);
   }
 }
